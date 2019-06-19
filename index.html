@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PeopleSoft</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="Circe/CRC55.otf.otf">
+	<meta charset="utf-8">
+</head>
+<body>
+	<header>
+		<div class="headerlogo">
+			<img src="images/PeopleSoft_1logosvg.png" alt="">
+		</div>
+		<div class="headermenu">
+			<div class="menucontainer">
+				<ul class="headerul">
+					<li>Портфолио</li>
+					<li>Услуги</li>
+					<li>О компании</li>
+					<li>Процесс</li>
+					<li>Достижения</li>
+					<li>Контакты</li>
+				</ul>
+			</div>
+		</div>
+		<div class="headernumber">
+			<u class="number">	
+				<a href="#">
+				+7 778 225 1400
+				</a>
+			</u>
+			<br>
+			<span class="zakaz">	
+				<a href="#">
+					Заказать звонок
+				</a>		
+			</span>
+		</div>
+	</header>
+	<div class="sect1" id="particles-js">
+		<div class="wrapper">
+			<div>
+				<h1>Разработка 
+				<span id="typed-strings">
+				    <p>Typed.js is a <strong>JavaScript</strong> library.</p>
+				    <p>It <em>types</em> out sentences.</p>
+				</span>
+				<span id="typed"></span>
+				</h1>
+				<p>
+					Если не понравиться - Вернем деньги!
+				</p>
+				<button>Рассчитать стоимость</button>
+				<button>наш startup</button>
+			</div>
+		</div>
+	</div>
+	<div class="sect2">
+		<div class="wrapper">
+			<img src="images/stylePhoto.png" alt="">
+			<h3>Выбирайте свой стиль</h3>
+			<div class="choice">
+				<ul>
+					<li>с анимациями</li>
+					<li>с уникальным дизайном</li>
+					<li>просто на шаблоне</li>
+				</ul>
+			</div>
+		</div>
+		<div class="imgDeee1">
+			<img src="images/mac_incline.png" alt="" class="mac">
+			<img src="images/analytics.png" alt="" class="analitics">
+		</div>
+		<div class="imgDeee2">
+			<img src="images/comp.png" class="comp">
+		</div>
+		<div class="imgDeee3">
+			<img src="images/mac_incline.png" alt="" class="mac">
+			<img src="images/code.png" alt="" class="code">
+			<img src="images/design.png" alt="" class="design">
+			<img src="images/analytics.png" alt="" class="analitics">
+		</div>
+	</div>
+
+	<div class="sect3">
+		<svg href="images/plane2.svg"></svg>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+	<script src="js/typeeed.js"></script>
+	<script src="js/particles.js"></script>
+	<script src="js/app.js"></script>
+
+	<!-- stats.js -->
+	<!-- <script src="js/lib/stats.js"></script> -->
+	<script>
+		var count_particles, stats, update;
+		stats = new Stats;
+		stats.setMode(0);
+		stats.domElement.style.position = 'absolute';
+		stats.domElement.style.left = '0px';
+		stats.domElement.style.top = '0px';
+		document.body.appendChild(stats.domElement);
+		count_particles = document.querySelector('.js-count-particles');
+		update = function() {
+		stats.begin();
+		stats.end();
+		if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+			count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+		}
+		};
+		requestAnimationFrame(update);
+	</script>
+	<!-- <script>
+		$('.imgDeee1').hide();
+		$('.imgDeee2').hide();
+		$(window).scroll(function(){
+			if($(this).scrollTop() > 510){
+				$('.imgDeee2').show();
+			}
+			else if($(this).scrollTop() > 530){
+				$('.imgDeee2').show();
+				$('.imgDeee1').hide();
+			}
+		})
+	</script> -->
+</body>
+</html>

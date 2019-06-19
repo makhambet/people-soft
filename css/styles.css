@@ -1,0 +1,162 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	font-family: circe, serif;
+	font-style: normal;
+	font-weight: 100;
+}
+.wrapper{
+	width: 1024px;
+	margin: 0 auto;
+}
+header{
+	height: 80px;
+	width: 100%;
+	box-sizing: border-box;
+	position: fixed;
+	padding: 5px 50px 20px 50px;
+	background: rgba(255,255,255,.8);
+	display: flex;
+	justify-content: space-between;
+	z-index: 99;
+}
+header>div{
+}
+.headerlogo{
+	text-align: left;
+}
+.headerlogo>img{
+	width: 200px;
+
+}
+.headermenu{
+	text-align: center;
+	margin: auto;
+	align-items: center;
+	align-content: center;
+	align-self: stretch;
+}
+.headernumber{
+	text-align: center;
+	float: right;
+}
+.headernumber,.headerlogo,.headermenu{
+	vertical-align: middle;
+	display: inline-block;
+}
+.headerul>li{
+	font-size: 18px;
+	font-family: 'Circe';
+	text-decoration: none;
+	padding-right:  15px;
+	vertical-align: middle;
+	box-sizing: content-box;
+	transition: 0.5s;
+	display: flex;
+}
+.headerul>li:hover{
+	color: #823f78;
+}
+.headerul{
+	display: flex;
+	
+}
+.number>a{
+	text-decoration: none;
+	color: black;
+	font-size: 22px;
+	font-weight: 900;
+	cursor: pointer;
+}
+.zakaz>a{
+	color: #d46cc5;
+	text-decoration: none;
+	font-size:  20px;
+	font-weight: 400;
+	cursor: pointer;
+}
+.sect1{
+	height: 100vh;
+	min-height: 500px;
+	background: url(../images/linii-abstrakciya-fo.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+.sect1 h1{
+	margin: 0;
+	font-size: 47px;
+}
+.sect1 canvas{
+	margin-top: -100%;
+}
+.sect1 .wrapper{
+	padding-top: 20%;
+	color: #fff;
+	font-size: 24px;
+}
+.sect1 .wrapper span{
+	color: #CE51B9;
+}
+#typed-strings{
+	color: #CE51B9;
+}
+.sect2 h3{
+	text-align: center;
+	font-size: 52px;
+	line-height: 1.55;
+	font-weight: 900;
+	/*margin-top: -60px;*/
+}
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+.sect2{
+	background: url(../images/bg-2.jpg) no-repeat;
+	background-size: 100% 100%;
+	height: 150vh;
+}
+.sect2 img{
+	width: 600px;
+	position: absolute;
+}
+.imgDeee1, .imgDeee2, .imgDeee3{
+	margin-left: 400px;
+	margin-top: 100px;
+	position: relative;
+}
+.imgDeee2, .imgDeee1{
+	display: none;
+}
+.imgDeee1{
+	margin-left: 900px;
+}
+.imgDeee3 > img:nth-child(1){
+	margin-left: 500px;
+}
+.imgDeee3 > img:nth-child(2){
+	margin-left: 480px;
+}
+.imgDeee3 > img:nth-child(3){
+	margin-left: 430px;
+}
+.imgDeee3 > img:nth-child(4){
+	margin-left: 360px;
+}
